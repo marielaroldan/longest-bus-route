@@ -1,0 +1,55 @@
+{
+  "StatusCode": 0,
+  "Message": null,
+  "ExecutionTime": 492,
+  "ResponseData": {
+    "Version": "2024-03-11 00:15",
+    "Type": "StopPoint",
+    "Result": [
+      {
+        "StopPointNumber": "10001",
+        "StopPointName": "Stadshagsplan",
+        "StopAreaNumber": "10001",
+        "LocationNorthingCoordinate": "59.3373571967995",
+        "LocationEastingCoordinate": "18.0214674159693",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2022-10-28 00:00:00.000",
+        "ExistsFromDate": "2022-10-28 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "10002",
+        "StopPointName": "John Bergs plan",
+        "StopAreaNumber": "10002",
+        "LocationNorthingCoordinate": "59.3361450073188",
+        "LocationEastingCoordinate": "18.0222866342593",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2015-09-24 00:00:00.000",
+        "ExistsFromDate": "2015-09-24 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "10003",
+        "StopPointName": "John Bergs plan",
+        "StopAreaNumber": "10002",
+        "LocationNorthingCoordinate": "59.3362549983713",
+        "LocationEastingCoordinate": "18.0220232520707",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2015-09-24 00:00:00.000",
+        "ExistsFromDate": "2015-09-24 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "10006",
+        "StopPointName": "Arbetargatan",
+        "StopAreaNumber": "10006",
+        "LocationNorthingCoordinate": "59.3352143599364",
+        "LocationEastingCoordinate": "18.0270636513120",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2022-09-29 00:00:00.000",
+        "ExistsFromDate": "2022-09-29 00:00:00.000"
+      }
+    ]
+  }
+}
