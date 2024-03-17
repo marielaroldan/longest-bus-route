@@ -1,22 +1,18 @@
 package dev.marielaroldan.integration.points;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.marielaroldan.integration.stops.TestStopPointResponseDeserialization;
+import dev.marielaroldan.TestUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.List;
 
 public class TestJourneyPatternPointResponseDeseralization {
 
     @Test
     void testJsonDeserialization() throws IOException, URISyntaxException {
-        var actual = readJourneyPoint();
+        var actual = TestUtil.readJourneyPoint("linedata_bus.json");
         var expected = new JourneyPatternPointResponse(new JourneyPatternPointsData(List.of(
                 new JourneyPoint("1",
                         "1",
@@ -33,16 +29,9 @@ public class TestJourneyPatternPointResponseDeseralization {
                         "10014",
                         "2022-08-10 00:00:00.000",
                         "2022-08-10 00:00:00.000")
-        )));
+        )), null, "0");
         Assertions.assertEquals(expected, actual);
     }
 
-    private JourneyPatternPointResponse readJourneyPoint() throws IOException, URISyntaxException {
-        URL resource = TestStopPointResponseDeserialization.class.getClassLoader()
-                .getResource("linedata_bus.json");
-        return new ObjectMapper()
-                .readValue(Files
-                        .newBufferedReader(
-                                Path.of(resource.toURI())), JourneyPatternPointResponse.class);
-    }
+
 }

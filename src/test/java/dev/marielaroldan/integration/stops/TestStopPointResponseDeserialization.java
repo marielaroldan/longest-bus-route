@@ -1,21 +1,17 @@
 package dev.marielaroldan.integration.stops;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.marielaroldan.integration.points.TestJourneyPatternPointResponseDeseralization;
+import dev.marielaroldan.TestUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.List;
 
 public class TestStopPointResponseDeserialization {
     @Test
     void testJsonDeserialization() throws IOException, URISyntaxException {
-        var actual = readStopPoint();
+        var actual = TestUtil.readStopPoint("linedata_bus_stopsnames.json");
         var expected = new StopPointResponse(new StopPointData(List.of(
                 new Stop("10001",
                         "Stadshagsplan",
@@ -53,15 +49,7 @@ public class TestStopPointResponseDeserialization {
                         "BUSTERM",
                         "2022-09-29 00:00:00.000",
                         "2022-09-29 00:00:00.000")
-        )));
+        )), null, "0");
         Assertions.assertEquals(expected, actual);
-    }
-
-    private static StopPointResponse readStopPoint() throws IOException, URISyntaxException {
-        URL resource = TestJourneyPatternPointResponseDeseralization.class.getClassLoader()
-                .getResource("linedata_bus_stopsnames.json");
-        return new ObjectMapper()
-                .readValue(Files
-                        .newBufferedReader(Path.of(resource.toURI())), StopPointResponse.class);
     }
 }

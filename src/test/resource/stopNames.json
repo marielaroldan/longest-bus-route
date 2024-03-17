@@ -1,0 +1,243 @@
+{
+  "StatusCode": 0,
+  "Message": null,
+  "ExecutionTime": 492,
+  "ResponseData": {
+    "Version": "2024-03-11 00:15",
+    "Type": "StopPoint",
+    "Result": [
+      {
+        "StopPointNumber": "91014",
+        "StopPointName": "Burevägen",
+        "StopAreaNumber": "91014",
+        "LocationNorthingCoordinate": "59.4101874224113",
+        "LocationEastingCoordinate": "18.0868157830750",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-02-28 00:00:00.000",
+        "ExistsFromDate": "2024-02-28 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "91015",
+        "StopPointName": "Klingsta sjukhem",
+        "StopAreaNumber": "91015",
+        "LocationNorthingCoordinate": "59.3999956215588",
+        "LocationEastingCoordinate": "18.0189226110789",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-03-02 00:00:00.000",
+        "ExistsFromDate": "2024-03-02 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "91008",
+        "StopPointName": "Askersgatan",
+        "StopAreaNumber": "91008",
+        "LocationNorthingCoordinate": "59.2605064810548",
+        "LocationEastingCoordinate": "18.0272915762900",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-02-28 00:00:00.000",
+        "ExistsFromDate": "2024-02-28 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "91009",
+        "StopPointName": "Hovstagränd",
+        "StopAreaNumber": "91009",
+        "LocationNorthingCoordinate": "59.2655090469043",
+        "LocationEastingCoordinate": "18.0196790818414",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-02-28 00:00:00.000",
+        "ExistsFromDate": "2024-02-28 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "91010",
+        "StopPointName": "Lerbäcksgränd",
+        "StopAreaNumber": "91010",
+        "LocationNorthingCoordinate": "59.2606796065441",
+        "LocationEastingCoordinate": "18.0217786424052",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-02-28 00:00:00.000",
+        "ExistsFromDate": "2024-02-28 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "51512",
+        "StopPointName": "Akalla",
+        "StopAreaNumber": "51464",
+        "LocationNorthingCoordinate": "59.4156919999482",
+        "LocationEastingCoordinate": "17.9130949999954",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2022-11-06 00:00:00.000",
+        "ExistsFromDate": "2022-11-06 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "55088",
+        "StopPointName": "Stora torget",
+        "StopAreaNumber": "55087",
+        "LocationNorthingCoordinate": "59.4138032901280",
+        "LocationEastingCoordinate": "17.8647416293059",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2018-09-27 00:00:00.000",
+        "ExistsFromDate": "2018-09-27 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "55201",
+        "StopPointName": "Barkarby station",
+        "StopAreaNumber": "55200",
+        "LocationNorthingCoordinate": "59.4042566964318",
+        "LocationEastingCoordinate": "17.8660650250775",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2022-03-03 00:00:00.000",
+        "ExistsFromDate": "2022-03-03 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "55215",
+        "StopPointName": "Barkarby station övre",
+        "StopAreaNumber": "55215",
+        "LocationNorthingCoordinate": "59.4070539999535",
+        "LocationEastingCoordinate": "17.8617109999964",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2022-12-21 00:00:00.000",
+        "ExistsFromDate": "2022-12-21 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "55087",
+        "StopPointName": "Stora torget",
+        "StopAreaNumber": "55087",
+        "LocationNorthingCoordinate": "59.4136066216312",
+        "LocationEastingCoordinate": "17.8645850410493",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2018-09-27 00:00:00.000",
+        "ExistsFromDate": "2018-09-27 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "55211",
+        "StopPointName": "Barkarby station",
+        "StopAreaNumber": "55200",
+        "LocationNorthingCoordinate": "59.4043916879312",
+        "LocationEastingCoordinate": "17.8654583846686",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-03-02 00:00:00.000",
+        "ExistsFromDate": "2024-03-02 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "55216",
+        "StopPointName": "Barkarby station övre",
+        "StopAreaNumber": "55215",
+        "LocationNorthingCoordinate": "59.4060739999536",
+        "LocationEastingCoordinate": "17.8602759999965",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2022-12-21 00:00:00.000",
+        "ExistsFromDate": "2022-12-21 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40275",
+        "StopPointName": "Orminge centrum",
+        "StopAreaNumber": "40273",
+        "LocationNorthingCoordinate": "59.3248897149664",
+        "LocationEastingCoordinate": "18.2586436624034",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2023-01-15 00:00:00.000",
+        "ExistsFromDate": "2023-01-15 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40386",
+        "StopPointName": "Korset",
+        "StopAreaNumber": "40421",
+        "LocationNorthingCoordinate": "59.3329552726091",
+        "LocationEastingCoordinate": "18.2649397705756",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-02-27 00:00:00.000",
+        "ExistsFromDate": "2024-02-27 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40493",
+        "StopPointName": "Sarvträsk",
+        "StopAreaNumber": "40493",
+        "LocationNorthingCoordinate": "59.3281500089119",
+        "LocationEastingCoordinate": "18.2622239998841",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2014-06-03 00:00:00.000",
+        "ExistsFromDate": "2014-06-03 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40500",
+        "StopPointName": "Telegrafberget",
+        "StopAreaNumber": "40500",
+        "LocationNorthingCoordinate": "59.3400923856989",
+        "LocationEastingCoordinate": "18.2331838690722",
+        "ZoneShortName": "A",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2022-02-24 00:00:00.000",
+        "ExistsFromDate": "2022-02-24 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40310",
+        "StopPointName": "Orminge centrum",
+        "StopAreaNumber": "40273",
+        "LocationNorthingCoordinate": "59.3251499729904",
+        "LocationEastingCoordinate": "18.2582993078834",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2023-01-15 00:00:00.000",
+        "ExistsFromDate": "2023-01-15 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40388",
+        "StopPointName": "Kummelbergets industriområde",
+        "StopAreaNumber": "40389",
+        "LocationNorthingCoordinate": "59.3370627438775",
+        "LocationEastingCoordinate": "18.2483936832837",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2023-02-07 00:00:00.000",
+        "ExistsFromDate": "2023-02-07 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40422",
+        "StopPointName": "Korset",
+        "StopAreaNumber": "40421",
+        "LocationNorthingCoordinate": "59.3327080365017",
+        "LocationEastingCoordinate": "18.2648204275498",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2024-02-27 00:00:00.000",
+        "ExistsFromDate": "2024-02-27 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40494",
+        "StopPointName": "Sarvträsk",
+        "StopAreaNumber": "40493",
+        "LocationNorthingCoordinate": "59.3290561720134",
+        "LocationEastingCoordinate": "18.2627463501637",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2014-06-03 00:00:00.000",
+        "ExistsFromDate": "2014-06-03 00:00:00.000"
+      },
+      {
+        "StopPointNumber": "40389",
+        "StopPointName": "Kummelbergets industriområde",
+        "StopAreaNumber": "40389",
+        "LocationNorthingCoordinate": "59.3368160669775",
+        "LocationEastingCoordinate": "18.2493320861281",
+        "ZoneShortName": "B",
+        "StopAreaTypeCode": "BUSTERM",
+        "LastModifiedUtcDateTime": "2023-02-07 00:00:00.000",
+        "ExistsFromDate": "2023-02-07 00:00:00.000"
+      }
+    ]
+  }
+}
+
