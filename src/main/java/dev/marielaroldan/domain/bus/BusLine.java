@@ -13,14 +13,13 @@ public record BusLine(int lineNumber,
 
     @Override
     public String toString() {
-        return "Bus Line number = " + lineNumber + "," + "\n" +
-                "Bus direction = " + direction + "," + "\n" +
+        return "Bus Line " + lineNumber + "(" + direction + ")\n" +
                 printStopsNames(busStops);
     }
 
     private String printStopsNames(List<String> busStops) {
         return busStops.stream()
                 .map(p -> "\t" + p)
-                .collect(Collectors.joining(" \n", "Bus stops = \n", ""));
+                .collect(Collectors.joining(" \n"));
     }
 }

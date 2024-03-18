@@ -22,14 +22,19 @@ import java.util.List;
 
 public class TraffickerRetriever implements BusAndStopRetriever {
 
+    private final static String URI = "https://api.sl.se/api2/linedata.json";
     private final HttpClient client;
     final private String uri;
     final private String key;
 
-    public TraffickerRetriever(final String uri, final String key) {
+    TraffickerRetriever(final String uri, final String key) {
         this.client = HttpClient.newHttpClient();
         this.uri = uri;
         this.key = key;
+    }
+
+    public TraffickerRetriever(String key) {
+        this(URI, key);
     }
 
     @Override

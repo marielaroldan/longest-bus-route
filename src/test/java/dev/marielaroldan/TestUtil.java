@@ -3,7 +3,6 @@ package dev.marielaroldan;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dev.marielaroldan.integration.points.JourneyPatternPointResponse;
 import dev.marielaroldan.integration.stops.StopPointResponse;
-import dev.marielaroldan.integration.stops.TestStopPointResponseDeserialization;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -18,7 +17,7 @@ public class TestUtil {
     }
 
     public static String getAsStream(String responseFile) throws IOException, URISyntaxException {
-        URL resource = TestStopPointResponseDeserialization.class.getClassLoader()
+        URL resource = TestUtil.class.getClassLoader()
                 .getResource(responseFile);
         return Files
                 .readString(Path.of(resource.toURI()));

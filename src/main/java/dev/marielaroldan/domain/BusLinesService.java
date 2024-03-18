@@ -15,8 +15,8 @@ public class BusLinesService {
 
     private final BusAndStopRetriever busAndStopRetriever;
 
-    public BusLinesService(final String uri, final String key) {
-        this.busAndStopRetriever = new TraffickerRetriever(uri, key);
+    public BusLinesService(final String key) {
+        this.busAndStopRetriever = new TraffickerRetriever(key);
     }
 
     BusLinesService(final BusAndStopRetriever busAndStopRetriever) {

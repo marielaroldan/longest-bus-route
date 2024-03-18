@@ -2,17 +2,12 @@ package dev.marielaroldan.domain;
 
 import dev.marielaroldan.TestUtil;
 import dev.marielaroldan.integration.stops.Stop;
-import io.vavr.Tuple;
-import io.vavr.Tuple2;
 import io.vavr.control.Either;
 import io.vavr.control.Validation;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class LocalRetriever implements BusAndStopRetriever {
 
@@ -51,21 +46,5 @@ public class LocalRetriever implements BusAndStopRetriever {
         } catch (IOException | URISyntaxException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    public static void main(String[] args) {
-        List<JourneyPoint> journeyPoints = new LocalRetriever("linedata_bus_full.json",
-                "linedata_bus_stopsnames_full.json").getJourneyPoints().get();
-
-        Map<Tuple2<Integer, Integer>, Long> collect = journeyPoints
-                .stream()
-                .collect(Collectors.groupingBy(journeyPoint -> Tuple.of(journeyPoint.busLineNumber(), journeyPoint.direction()), Collectors.counting()));
-        var list = collect.entrySet()
-                .stream()
-                .sorted(Comparator.comparingLong(Map.Entry::getValue))
-                .limit(10)
-                .toList();
-
-        list.forEach(System.out::println);
     }
 }

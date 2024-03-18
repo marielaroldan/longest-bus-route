@@ -32,6 +32,4 @@ public class TestJourneyPatternPointResponseDeseralization {
         )), null, "0");
         Assertions.assertEquals(expected, actual);
     }
-
-
 }
