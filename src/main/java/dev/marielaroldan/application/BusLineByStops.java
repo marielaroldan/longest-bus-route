@@ -2,6 +2,7 @@ package dev.marielaroldan.application;
 
 import dev.marielaroldan.domain.BusLinesService;
 import dev.marielaroldan.domain.bus.BusLine;
+import dev.marielaroldan.integration.TraffickerRetriever;
 import io.vavr.Tuple;
 import io.vavr.Tuple2;
 import io.vavr.control.Either;
@@ -25,12 +26,12 @@ public class BusLineByStops {
     private static Either<String, Tuple2<Integer, String>> validateInput(String[] args) {
         try {
             if (args.length != 2) {
-                return Either.left("Error: Input parameters missing");
+                return Either.left("Error: Input parameters missing - TopN and API-Key");
 
             }
             final int n = Integer.parseInt(args[0]);
             if (n <= 0) {
-                return Either.left("Error: Number of bus lines to return should be greather than 0");
+                return Either.left("Error: Number of bus lines to return should be greater than 0: " + args[0]);
             }
             final var apiKey = args[1];
             if (apiKey.isEmpty()) {
@@ -43,7 +44,7 @@ public class BusLineByStops {
     }
 
     private static Either<String, List<BusLine>> getTopNBusLinesByNStops(int n, String key) {
-        BusLinesService service = new BusLinesService(key);
+        BusLinesService service = new BusLinesService(new TraffickerRetriever(key));
         return service.getBusLinesWithMostStops(n);
     }
 }
