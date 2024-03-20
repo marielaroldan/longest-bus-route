@@ -1,7 +1,6 @@
 package dev.marielaroldan.domain;
 
 import dev.marielaroldan.domain.bus.BusLine;
-import dev.marielaroldan.integration.TraffickerRetriever;
 import io.vavr.Tuple;
 import io.vavr.Tuple2;
 import io.vavr.control.Either;
@@ -15,18 +14,14 @@ public class BusLinesService {
 
     private final BusAndStopRetriever busAndStopRetriever;
 
-    public BusLinesService(final String key) {
-        this.busAndStopRetriever = new TraffickerRetriever(key);
-    }
-
-    BusLinesService(final BusAndStopRetriever busAndStopRetriever) {
+    public BusLinesService(final BusAndStopRetriever busAndStopRetriever) {
         this.busAndStopRetriever = busAndStopRetriever;
     }
 
     public Either<String, List<BusLine>> getBusLinesWithMostStops(final int n) {
 
         if (n <= 0) {
-            return Either.left("Error: n most be greater than or equals to 1");
+            return Either.left("Error: n most be greater than or equals to 1: " + n);
         }
         return getBusLines()
                 .map(busLines -> findTopBusLines(busLines, n));

@@ -21,6 +21,6 @@ public class ValidationUtil {
 
     public static Validation<String, String> validateString(String stringValue) {
         return stringValue == null || stringValue.isEmpty() ? Validation.invalid("Error in String value")
-                :Validation.valid(stringValue);
+                : Validation.valid(stringValue);
     }
 }
